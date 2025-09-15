@@ -278,7 +278,7 @@ body {
 /* --- ESTILOS PARA LA NUEVA GALERÍA DE TARJETAS --- */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
     gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
@@ -300,8 +300,12 @@ body {
 
 .gallery-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    /* Elimina el height fijo o cámbialo a auto para que la imagen determine la altura */
+    height: auto; 
+    /* Cambia cover a contain para que la imagen se ajuste sin recortarse */
+    object-fit: contain; 
+    /* Agrega un color de fondo si quieres rellenar los espacios vacíos con algo */
+    background-color: #f0f0f0; /* Un color claro para el fondo */
 }
 
 .gallery-card .card-content {

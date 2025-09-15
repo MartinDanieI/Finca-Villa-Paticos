@@ -1,0 +1,350 @@
+body {
+    /* FUENTE ACTUALIZADA */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    cursor: none;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ---- HEADER MÁS PEQUEÑO ---- */
+.header {
+    background-color: #005a8d;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out; /* <-- AÑADE ESTA LÍNEA */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-scrolled {
+    padding: 2px 0; /* <--- Reducido (antes era 5px) */
+    background-color: rgba(0, 90, 141, 0.95); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+}
+
+/* Reduce MÁS el tamaño del logo */
+.header-scrolled .logo {
+    font-size: 1.3em; /* <--- Reducido (antes era 1.5em) */
+}
+
+/* Reduce MÁS el tamaño del botón de contacto */
+.header-scrolled .btn-contact {
+    padding: 4px 14px; /* <--- Reducido (antes era 6px 16px) */
+}
+.logo {
+    /* FUENTE ACTUALIZADA */
+    font-family: 'Lora', serif;
+    /* Reducimos el tamaño de la fuente del logo */
+    font-size: 1.8em;
+    margin: 0;
+}
+/* ---- FIN DE CAMBIOS EN HEADER ---- */
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #a0d2eb;
+}
+
+.btn-contact {
+    background-color: #2f97db;
+    color: #005a8d;
+    padding: 8px 18px; /* Ligeramente más pequeño */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #053f5c;
+    color: #005a8d;
+}
+
+.hero {
+    
+    background: url('img/foto-piscina.jpg') no-repeat center center/cover;
+    height: 92vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+
+
+.hero .hero-content {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+}
+
+/* --- CÓDIGO NUEVO O A MODIFICAR --- */
+
+/* Añade un espacio debajo del título principal */
+.hero-content h2 {
+    /* FUENTE ACTUALIZADA */
+    font-family: 'Lora', serif;
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 20px; /* <--- AÑADE ESTA LÍNEA */
+}
+
+/* Añade un espacio más grande debajo del párrafo (antes del botón) */
+.hero-content p {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 30px; /* <--- AÑADE ESTA LÍNEA */
+}
+
+.btn {
+    background-color: #fff;
+    color: #005a8d;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a0d2eb;
+    color: #005a8d;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    /* FUENTE ACTUALIZADA */
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #005a8d;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-item h3 {
+    /* FUENTE ACTUALIZADA */
+    font-family: 'Lora', serif;
+    color: #005a8d;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.pricing-table th {
+    background-color: #005a8d;
+    color: #fff;
+    /* FUENTE ACTUALIZADA */
+    font-family: 'Lora', serif;
+}
+
+.pricing-table td {
+    background-color: #fff;
+}
+
+.map {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-section a {
+    margin: 10px;
+}
+
+.footer {
+    background-color: #005a8d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about-section-bg {
+    background: url('img/foto-arriba.jpg') no-repeat center center/cover;
+    position: relative; 
+    color: #fff; 
+    padding: 100px 0; 
+}
+
+
+.about-section-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1; 
+}
+
+
+.about-section-bg .container-content {
+    position: relative; 
+    z-index: 2; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+}
+
+
+.about-section-bg h2 {
+    color: #fff; 
+}
+.about-section-bg p {
+    font-weight: bold;
+}
+/* --- ESTILOS PARA LA NUEVA GALERÍA DE TARJETAS --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-card .card-content {
+    padding: 20px;
+}
+
+.gallery-card h3 {
+    margin-top: 0;
+    color: #005a8d;
+    font-family: 'Lora', serif;
+}
+
+.gallery-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+.cursor-gradient {
+    /* Forma y Posición */
+    position: fixed; /* Lo pega a la ventana */
+    top: 0;
+    left: 0;
+    width: 35px;   /* Tamaño del círculo */
+    height: 35px;
+    border-radius: 50%; /* Lo hace redondo */
+    pointer-events: none; /* Permite hacer clic a través de él */
+    
+    /* El Degradado (La Magia) */
+    background: radial-gradient(
+        circle, 
+        #2074e2,  /* Verde brillante en el centro */
+        #077416   /* Azul en los bordes */
+    );
+    
+    /* Efecto y Animación */
+    filter: blur(5px); /* Desenfoque para un borde suave, como una luz */
+    transform: translate(-50%, -50%); /* Centra el círculo en el puntero */
+    transition: transform 0.15s ease-out, opacity 0.3s ease-out;  /* Animación de seguimiento suave */
+    z-index: 9999; /* Se asegura de que esté por encima de todo */
+}
+a, button, .btn {
+    cursor: pointer;
+}
+.cursor-gradient.hidden {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}

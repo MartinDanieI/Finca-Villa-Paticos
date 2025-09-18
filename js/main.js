@@ -44,3 +44,12 @@ interactiveElements.forEach(el => {
         }
     });
 });
+// --- CÓDIGO PARA EL MENÚ HAMBURGUESA ---
+const hamburgerBtn = document.querySelector('.hamburger-btn');
+const mainNav = document.querySelector('.main-nav');
+
+if (hamburgerBtn && mainNav) {
+    hamburgerBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('is-active');
+    });
+}

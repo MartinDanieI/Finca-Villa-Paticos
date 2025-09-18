@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finca Villa Paticos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-patos.png">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -12,18 +14,27 @@
 <body class="p-8">
     <div class="cursor-gradient"></div>
     <header class="header">
-        <div class="container">
-            <h1 class="logo">Finca Villa Paticos</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">Sobre Nosotros</a></li>
-                    <li><a href="#gallery">Galería</a></li>
-                    <li><a href="#services">Instalaciones</a></li>
-                    <li><a href="#pricing">Precios</a></li>
-                    <li><a href="#location">Ubicación</a></li>
-                    <li><a href="#contact" class="btn-contact">Contacto</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="img/logo-patos.png" alt="Logo Finca Villa Paticos" class="logo-img">
+            <span class="logo-text">Finca Villa Paticos</span>
+        </a>
+
+        <nav class="main-nav">
+        <ul>
+            <li><a href="https://www.atom.bio/fincavillapaticos">Sobre Nosotros</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#services">Instalaciones</a></li>
+            <li><a href="#Redes">Redes</a></li>
+            <li><a href="#location">Ubicación</a></li>
+            <li><a href="#contact" class="btn-contact">Contacto</a></li>
+        </ul>
+    </nav>
+             <button class="hamburger-btn" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         </div>
     </header>
 
@@ -51,7 +62,7 @@
             
             <div class="gallery-grid">
                 <div class="gallery-card">
-                    <img src="img/foto-casaprincipal.jpg" alt="Foto de la piscina">
+                    <img src="img/casa-principal.jpg" alt="Foto de la piscina">
                     <div class="card-content">
                         <h3>Casa Principal</h3>
                         <p>El corazón de la propiedad, con un diseño acogedor y funcional.</p>
@@ -111,37 +122,6 @@
 
         <hr>
 
-        <section id="pricing" class="section">
-            <h2>Precios de Alquiler</h2>
-            <table class="pricing-table">
-                <thead>
-                    <tr>
-                        <th>Temporada</th>
-                        <th>Precio por Noche</th>
-                        <th>Mínimo de Noches</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Temporada Baja</td>
-                        <td>$500.000</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Temporada Alta</td>
-                        <td>$800.000</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Puentes Festivos</td>
-                        <td>$950.000</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <hr>
 
         <section id="location" class="section">
             <h2>Ubicación</h2>
@@ -152,10 +132,25 @@
 
         <hr>
 
+        <section id="Redes" class="section contact-section">
+            <h2>Síguenos en nuestras Redes Sociales</h2>
+            <p>Ayúdanos a potenciar esta finca y generar mejor alcance</p>
+            <div style="margin-top: 5%; font-size: 2em;">
+            <a href="https://www.facebook.com/profile.php?id=61580785416433&locale=es_LA" class="btn" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/finca_villa_paticos" class="btn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@villa.paticos?lang=es-419" class="btn" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+        </section>
+        
+        <hr>
+
         <section id="contact" class="section contact-section">
             <h2>Contáctanos y Reserva</h2>
             <p>Para más información y para realizar tu reserva, no dudes en contactarnos.</p>
-            <a href="https://wa.link/t4fv7v" class="btn" target="_blank">Escríbenos por WhatsApp</a>
+            <div style="margin-top: 5%;">
+                <a href="https://wa.link/t4fv7v" class="btn" target="_blank">Escríbenos por WhatsApp</a>
+            </div>
         </section>
     </main>
 

@@ -53,3 +53,34 @@ if (hamburgerBtn && mainNav) {
         mainNav.classList.toggle('is-active');
     });
 }
+
+
+
+var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // Puntos de ruptura para el diseño responsive
+        breakpoints: {
+            // Cuando la ventana es >= 768px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+            },
+            // Cuando la ventana es >= 1024px
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+            },
+        },
+    });
+
+

@@ -1,6 +1,7 @@
 /* =======================================
    NUEVA PALETA DE COLORES - VILLA PATICOS
    ======================================= */
+@import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
 :root {
     --bg-crema: #FDF6E8;
     --verde-azulado: #2A5B6A;
@@ -213,6 +214,59 @@ html, body {
     font-size: 0.9em;
 }
 
+/* Nuevas reglas para el carrusel */
+.mySwiper {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding-bottom: 50px; /* Espacio para los puntos de paginación */
+}
+
+.swiper-slide {
+    background-color: var(--blanco-puro); 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Para que el contenido se ajuste */
+    flex-direction: column;
+}
+
+/* Aplica el efecto de hover de tu diseño original */
+.swiper-slide:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(42, 91, 106, 0.15); 
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 300px; /* Altura fija para las imágenes */
+    object-fit: cover; 
+}
+
+.swiper-slide .card-content {
+    padding: 20px;
+}
+
+/* Estilos de navegación de Swiper */
+.swiper-button-next, .swiper-button-prev {
+    color: var(--verde-azulado); /* Usa tu color de acento */
+    top: 40%; /* Ajusta la posición de las flechas */
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--verde-azulado); /* Color de los puntos activos */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .swiper-slide img {
+        height: 200px; /* Reduce la altura de la imagen en móviles */
+    }
+}
+
+/*--SERVICIOS--*/
 
 .services-grid {
     display: grid;
@@ -528,4 +582,43 @@ hr {
 }
 .main-nav, .hamburger-btn {
     margin-left: auto;
+}
+
+/*--BOTÓN DE WhastApp--*/
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed; /* Esto lo fija en la pantalla */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    bottom: 40px; /* Distancia desde la parte inferior */
+    right: 40px; /* Distancia desde la derecha */
+    background-color: #25d366; /* El color verde de WhatsApp */
+    color: #fff; /* Color del ícono */
+    border-radius: 50px; /* Lo hace circular */
+    text-align: center;
+    font-size: 30px; /* Tamaño del ícono */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+    display: flex; /* Para centrar el ícono */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Quita el subrayado */
+    transition: transform 0.2s ease-in-out; /* Animación al pasar el cursor */
+}
+
+/* Efecto al pasar el mouse */
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Agranda el botón ligeramente */
+}
+
+/* Responsive: Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
 }
